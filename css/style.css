@@ -10,18 +10,42 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* top bar */
+
+
+.bar-spam {
+    background-color: rgba(0, 0, 0, 0.607);
+    height: 60px;
+    width: calc(1500px - 180px);
+    margin-left: 180px;
+    margin: auto;
+    position: fixed;
+    z-index: 9;
+    right: -50%;
+    left: -50%; 
+}
+
+.spam-button {
+    text-transform: uppercase;
+
+}
+
 /* aside bar and main */
 
-.father-container {
+.big-container {
     display: flex;
+    max-width: 1500px;
+    margin: auto;
 }
+
 
 /* aside bar */
 
 aside {
     background-color: gold;
-    height: calc(100vh - 15vh);
-    flex-basis: 20%;
+    height: calc(100vh - 100px);
+    min-width: 180px;
 }
 
 
@@ -29,24 +53,20 @@ aside {
 
 main {
     background-color: blue;
-    height: calc(100vh - 15vh);
-    flex-basis: 80%;
+    height: calc(100vh - 100px - 100px);
+    width: calc(100vw - 180px);
     overflow-y: scroll;
+    padding-top: 100px;
 }
 
-.annoying-spam {
-    background-color: rgba(0, 0, 0, 0.607);
-    height: 8vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 99;
-}
 
 /* footer */
 
 footer {
     background-color: red;
-    height: 15vh;
+    max-width: 1500px;
+    margin: auto;
+    min-height: 100px;
     position: fixed;
     z-index: 99;
     right: -50%;
