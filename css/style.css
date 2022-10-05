@@ -1,0 +1,33 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    background-color: gold;
+    height: calc(100vh - 100px);
+    width: 200px;
+}
+
+main {
+    background-color: blue;
+    height: calc(100vh - 100px);
+    width: calc(100vw - 200px);
+}
+
+footer {
+    background-color: red;
+    height: 100px;
+}
+
