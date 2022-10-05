@@ -11,26 +11,6 @@ html {
 }
 
 
-/* top bar */
-
-
-.bar-spam {
-    background-color: rgba(0, 0, 0, 0.607);
-    height: 60px;
-    width: calc(1500px - 180px);
-    margin-left: 180px;
-    margin: auto;
-    position: fixed;
-    z-index: 9;
-    right: -50%;
-    left: -50%; 
-}
-
-.spam-button {
-    text-transform: uppercase;
-
-}
-
 /* aside bar and main */
 
 .big-container {
@@ -43,8 +23,8 @@ html {
 /* aside bar */
 
 aside {
-    background-color: gold;
-    height: calc(100vh - 100px);
+    background-color: black;
+    height: calc(100vh - 70px);
     min-width: 180px;
 }
 
@@ -52,21 +32,54 @@ aside {
 /* main */
 
 main {
-    background-color: blue;
-    height: calc(100vh - 100px - 100px);
+    background-color: rgb(20, 25, 34);
+    height: calc(100vh - 70px);
     width: calc(100vw - 180px);
     overflow-y: scroll;
-    padding-top: 100px;
+}
+
+.bar-spam {
+    background-color: rgba(0, 0, 0, 0.607);
+    position: absolute;
+    height: 55px; 
+    max-width: 1320px;
+    width: calc(100% - 180px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.spam-button {
+    background-color: rgba(0, 0, 0, 0.331);
+    text-transform: uppercase;
+    margin-right: 2rem;
+    padding: .5em 2em;
+    border-radius: 1em;
+    border: 1px solid white;
+    color: white;
+}
+
+.spam-button:hover {
+    cursor: pointer;  
+    background-color: rgb(29, 208, 93);
+}
+
+.content {
+    border: 2px solid green; 
+    height: 100px;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 100px;
 }
 
 
 /* footer */
 
 footer {
-    background-color: red;
+    background-color: rgb(8, 11, 18);
     max-width: 1500px;
     margin: auto;
-    min-height: 100px;
+    min-height: 70px;
     position: fixed;
     z-index: 99;
     right: -50%;
@@ -75,9 +88,19 @@ footer {
 
 
 @media screen and (max-width: 878px) {
-    
+   
 }
 
 @media screen and (max-width: 522px) {
-    
+    aside {
+        min-width: 50px;
+    }
+
+    main {
+        width: calc(100vw - 50px);
+    }
+
+    .bar-spam {
+        width: calc(100% - 50px);
+    }
 }
