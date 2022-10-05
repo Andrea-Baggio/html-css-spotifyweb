@@ -10,24 +10,54 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+/* aside bar and main */
+
+.father-container {
     display: flex;
 }
 
+/* aside bar */
+
 aside {
     background-color: gold;
-    height: calc(100vh - 100px);
-    width: 200px;
+    height: calc(100vh - 15vh);
+    flex-basis: 20%;
 }
+
+
+/* main */
 
 main {
     background-color: blue;
-    height: calc(100vh - 100px);
-    width: calc(100vw - 200px);
+    height: calc(100vh - 15vh);
+    flex-basis: 80%;
+    overflow-y: scroll;
 }
+
+.annoying-spam {
+    background-color: rgba(0, 0, 0, 0.607);
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+}
+
+/* footer */
 
 footer {
     background-color: red;
-    height: 100px;
+    height: 15vh;
+    position: fixed;
+    z-index: 99;
+    right: -50%;
+    left: -50%;
 }
 
+
+@media screen and (max-width: 878px) {
+    
+}
+
+@media screen and (max-width: 522px) {
+    
+}
