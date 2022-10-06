@@ -32,7 +32,7 @@ aside {
     height: 99%;
     max-width: 90%;
     margin: auto;
-    color: white;
+    color: gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,6 +76,7 @@ aside {
 
 .home {
     padding-top: 1em;
+    color: white;
 }
 
 .aside-text {
@@ -156,10 +157,31 @@ aside {
 .username {
     font-size: .8em;
     font-weight: bold;
+    color: white;
 }
 
 /* aside hover effects */
 
+.aside-text:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.playlist-icon:hover {
+    cursor: pointer;  
+    color: white;
+    scale: 1.1;
+}
+
+.playlist-item:hover {
+    cursor: pointer;  
+    color: white;
+}
+
+.app-download-text:hover {
+    cursor: pointer;  
+    color: white;
+}
 
 /* main */
 
