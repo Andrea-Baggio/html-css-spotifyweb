@@ -7,7 +7,7 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -40,7 +40,7 @@ main {
 
 .bar-spam {
     background-color: rgba(0, 0, 0, 0.607);
-    position: absolute;
+    position: fixed;
     height: 55px; 
     max-width: 1320px;
     width: calc(100% - 180px);
