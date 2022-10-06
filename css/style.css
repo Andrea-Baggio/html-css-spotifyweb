@@ -28,6 +28,77 @@ aside {
     min-width: 180px;
 }
 
+.aside-container {
+    /* border: 2px solid green; */
+    max-width: 90%;
+    margin: auto;
+
+    color: white;
+}
+
+.top-block {
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+.top-block-logo {
+    width: 120px;
+}
+
+.top-block-logo img{
+    width: 100%;
+}
+
+.home,
+.search,
+.library {
+    width: 20px;
+}
+
+.home img,
+.search img,
+.library img {
+    width: 100%;
+}
+
+.aside-icon {
+    display: flex;
+    align-items: center;
+    padding: .2em 0;
+}
+
+.aside-icon img {
+    margin-right: .2em;
+}
+
+.home {
+    padding-top: 1em;
+}
+
+.aside-text {
+    white-space: nowrap;
+    font-size: .7em;
+}
+
+.playlist {
+    display: flex;
+}
+
+.playlist-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.playlist-item {
+    list-style: none;
+    font-size: .7em;
+    line-height: 2em;
+}
+
+
+
+/* aside hover effects */
+
 
 /* main */
 
@@ -35,10 +106,10 @@ main {
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 70px);
     width: calc(100vw - 180px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
-.bar-spam {
+.spam-bar {
     background-color: rgba(0, 0, 0, 0.607);
     position: fixed;
     height: 55px; 
@@ -59,23 +130,29 @@ main {
     color: white;
 }
 
+/* main hover effects */
+
 .spam-button:hover {
     cursor: pointer;  
     background-color: rgb(29, 208, 93);
+    scale: 1.1;
+}
+
+.spam-button:active {
+    background-color: rgb(32, 128, 66);
 }
 
 .content {
-    border: 2px solid green; 
     height: 100px;
     max-width: 95%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 
 /* footer */
 
-footer {
+.controls {
     background-color: rgb(8, 11, 18);
     max-width: 1500px;
     margin: auto;
@@ -91,7 +168,9 @@ footer {
    
 }
 
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 552px) {
+
+    /* structure */
     aside {
         min-width: 50px;
     }
