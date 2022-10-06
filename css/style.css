@@ -47,6 +47,11 @@ aside {
     width: 100%;
 }
 
+.top-block-logo-hover img{
+    width: 100%;
+    display: none;
+}
+
 .home,
 .search,
 .library {
@@ -184,7 +189,7 @@ main {
     border-radius: 1em;
     border: 1px solid white;
     color: white;
-}
+} 
 
 /* main hover effects */
 
@@ -224,10 +229,6 @@ main {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 878px) {
-   
-}
-
 @media screen and (max-width: 552px) {
 
     /* structure */
@@ -241,5 +242,72 @@ main {
 
     .bar-spam {
         width: calc(100% - 50px);
+    }
+
+    /* aside */
+
+    .aside-container {
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-block {
+        width: 33px;
+    }
+
+    .top-block-logo {
+        display: none;
+    }
+
+    .aside-icon {
+        width: 25px;
+    }
+
+    .home {
+        padding-top: .6em;
+    }
+
+    .top-block-logo-hover {
+        width: 25px;
+        margin-top: 1em;
+    }
+    
+    .top-block-logo-hover img{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .aside-text {
+        display: none;
+    }
+
+    .playlist,
+    .playlist-title,
+    .playlist-list,
+    .app-download-text,
+    .divider,
+    .username {
+        display: none;
+    }
+
+    .app-download img {
+        align-self: center;
+    }
+
+
+    /* main */
+
+    .spam-bar {
+        width: calc(100% - 50px);
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .spam-button {
+        white-space: nowrap;
+        font-size: .7em;
     }
 }
