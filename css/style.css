@@ -29,20 +29,18 @@ aside {
 }
 
 .aside-container {
-    /* border: 2px solid green; */
+    height: 99%;
     max-width: 90%;
     margin: auto;
-
     color: white;
-}
-
-.top-block {
-    /* border: 2px solid red; */
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-block-logo {
     width: 120px;
+    margin-top: 10px;
 }
 
 .top-block-logo img{
@@ -82,11 +80,19 @@ aside {
 
 .playlist {
     display: flex;
+    align-items: center;
+    padding: 1em 0;
 }
 
 .playlist-title {
     text-transform: uppercase;
     font-weight: 600;
+    margin-top: 1em;
+}
+
+.playlist-icon i {
+    font-size: 2em;
+    margin-right: .2em;
 }
 
 .playlist-item {
@@ -96,6 +102,56 @@ aside {
 }
 
 
+
+
+.app-download {
+    display: flex;
+    align-items: center;
+}
+
+.app-download-image {
+    width: .9rem;
+    display: flex;
+    align-items: center;
+    margin-right: .5em;
+}
+
+.app-download-image img {
+    width: 100%;
+}
+
+.app-download-text {
+    font-size: .7em;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: .3rem 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.profile-image{
+    width: .9rem;
+    margin-right: .8em;
+    padding: 0 .2rem;
+    background-color: rgb(128, 128, 128);
+    border-radius: 100%;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.username {
+    font-size: .8em;
+    font-weight: bold;
+}
 
 /* aside hover effects */
 
@@ -150,7 +206,7 @@ main {
 }
 
 
-/* footer */
+/* controls */
 
 .controls {
     background-color: rgb(8, 11, 18);
@@ -163,6 +219,10 @@ main {
     left: -50%;
 }
 
+
+
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 878px) {
    
