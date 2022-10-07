@@ -25,7 +25,7 @@ html {
 aside {
     background-color: black;
     height: calc(100vh - 70px);
-    min-width: 180px;
+    min-width: 200px;
 }
 
 .aside-container {
@@ -77,6 +77,7 @@ aside {
 .home {
     padding-top: 1em;
     color: white;
+    border-left: 2px solid rgb(173, 255, 47);
 }
 
 .aside-text {
@@ -92,8 +93,9 @@ aside {
 
 .playlist-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 1em;
+    color: white;
 }
 
 .playlist-icon i {
@@ -104,7 +106,7 @@ aside {
 .playlist-item {
     list-style: none;
     font-size: .7em;
-    line-height: 2em;
+    line-height: 2.5em;
 }
 
 
@@ -132,7 +134,7 @@ aside {
 
 .divider {
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
     padding: .3rem 0;
 }
 
@@ -188,7 +190,7 @@ aside {
 main {
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 70px);
-    width: calc(100vw - 180px);
+    width: calc(100vw - 200px);
     overflow-y: auto;
 }
 
@@ -197,7 +199,7 @@ main {
     position: fixed;
     height: 55px; 
     max-width: 1320px;
-    width: calc(100% - 180px);
+    width: calc(100% - 200px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -243,12 +245,13 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .7rem;
     border: 2px solid red;
 }
 
 .album {
-    flex-basis: calc((100% / 6) - 1rem);
+    flex-grow: 1;
+    flex-basis: calc((100% / 6) - .7rem);
     min-width: 130px;
 }
 
@@ -371,6 +374,12 @@ main {
 
     .spam-bar {
         width: calc(100% - 50px);
+    }
+
+    .album {
+        flex-grow: 1;
+        flex-basis: calc((100% / 2) - .7rem);
+        min-width: 140px;
     }
 }
 
