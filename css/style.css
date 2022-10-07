@@ -242,6 +242,13 @@ main {
 
 
 /* albums */
+.content {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    color: white;
+}
+
 .main-title {
     margin-top: 1.7rem;
 }
@@ -302,6 +309,10 @@ main {
     width: 100%;
 }
 
+.popular-container {
+    padding-bottom: 3rem;
+}
+
 .rounded-img {
     border-radius: 50%;
 }
@@ -319,31 +330,40 @@ main {
     background-color: rgb(32, 128, 66);
 }
 
-.content {
-    height: 100px;
-    max-width: 95%;
-    margin: auto;
-    margin-top: 80px;
-    color: white;
-}
-
 
 
 /* controls */
 
 .controls {
-    background-color: rgb(8, 11, 18);
+    background-color: rgb(40, 40, 40);
     max-width: 1500px;
+    position: relative;
     margin: auto;
     min-height: 70px;
-    position: fixed;
     z-index: 99;
-    right: -50%;
-    left: -50%;
+    display: flex;
+    align-items: center;
 }
 
+.controls-container {
+    border: 2px solid red;
+    width: 97%;
+    margin: auto;
+    color: white;
+}
 
+.ctrl-left-block {
+    display: flex;
+    align-items: center;
+}
 
+.song {
+    width: 40px;
+}
+
+.song img {
+    width: 100%;
+}
 
 /* MEDIA QUERY */
 
@@ -439,5 +459,9 @@ main {
     .spam-button {
         white-space: nowrap;
         font-size: .7em;
+    }
+
+    .top-bar-item {
+        font-size: .8em;
     }
 }
