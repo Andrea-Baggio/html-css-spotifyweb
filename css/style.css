@@ -213,6 +213,49 @@ main {
     color: white;
 } 
 
+/* top-bar */
+
+.top-bar {
+    width: 70%;
+    margin: auto;
+    color: gray;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.top-bar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-bar-item {
+    white-space: nowrap;
+}
+
+
+
+
+/* albums */
+.albums {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 2px solid red;
+}
+
+.album {
+    flex-basis: calc((100% / 6) - 1rem);
+    min-width: 130px;
+}
+
+.album img {
+    width: 100%;
+}
+
 /* main hover effects */
 
 .spam-button:hover {
@@ -250,6 +293,12 @@ main {
 
 
 /* MEDIA QUERY */
+
+@media screen and (max-width: 878px) {
+    .top-bar {
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 552px) {
 
