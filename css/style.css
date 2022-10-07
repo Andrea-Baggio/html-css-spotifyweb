@@ -359,11 +359,34 @@ main {
 
 .song {
     width: 40px;
+    margin-right: .5rem;
 }
 
 .song img {
     width: 100%;
 }
+
+.song-album {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.song-name {
+    font-size: .7em;
+    color: rgb(127, 127, 127);
+}
+
+.ctrl-left-icons {
+    margin-left: 2.2rem;
+    display: flex;
+    gap: .8rem;
+}
+
+
+
+
+
+
 
 /* MEDIA QUERY */
 
