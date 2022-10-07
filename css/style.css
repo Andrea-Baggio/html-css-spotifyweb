@@ -229,8 +229,9 @@ main {
 .top-bar-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .top-bar-item {
@@ -241,12 +242,19 @@ main {
 
 
 /* albums */
+.albums-container {
+    margin-top: 1.7rem;
+}
+
+.albums-title {
+    margin-bottom: 1rem;
+}
+
 .albums {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: .7rem;
-    border: 2px solid red;
 }
 
 .album {
@@ -276,7 +284,9 @@ main {
     max-width: 95%;
     margin: auto;
     margin-top: 80px;
+    color: white;
 }
+
 
 
 /* controls */
