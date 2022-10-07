@@ -242,7 +242,7 @@ main {
 
 
 /* albums */
-.albums-container {
+.main-title {
     margin-top: 1.7rem;
 }
 
@@ -254,18 +254,58 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: .7rem;
+    gap: 1.6rem;
 }
 
 .album {
     flex-grow: 1;
-    flex-basis: calc((100% / 6) - .7rem);
+    flex-basis: calc((100% / 6) - 1.6rem);
     min-width: 130px;
 }
 
 .album img {
     width: 100%;
 }
+
+.album-text {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    padding: .5em 0;
+}
+
+.album-subtitle {
+    text-align: center;
+    font-size: .6em;
+    color: gray;
+}
+
+
+.custom-subtitle,
+.popular-subtitle {
+    padding: .7em 0 2em;
+    font-size: .7em;
+    color: gray;
+}
+
+.custom-playlist, .popular-playlist {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.custom-album, .popular-album {
+    width: 150px;
+}
+
+.custom-album img,
+.popular-album img {
+    width: 100%;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
+
 
 /* main hover effects */
 
@@ -388,8 +428,8 @@ main {
 
     .album {
         flex-grow: 1;
-        flex-basis: calc((100% / 2) - .7rem);
-        min-width: 140px;
+        flex-basis: calc((100% / 3) - .7rem);
+        min-width: 130px;
     }
 }
 
