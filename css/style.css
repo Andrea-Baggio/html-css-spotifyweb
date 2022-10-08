@@ -8,6 +8,7 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(19, 19, 19);
 }
 
 
@@ -41,13 +42,14 @@ aside {
 .top-block-logo {
     width: 120px;
     margin-top: 10px;
+    padding-bottom: 1rem;
 }
 
 .top-block-logo img{
     width: 100%;
 }
 
-.top-block-logo-hover img{
+.top-block-logo-under img{
     width: 100%;
     display: none;
 }
@@ -75,7 +77,8 @@ aside {
 }
 
 .home {
-    padding-top: 1em;
+    margin-left: -10px;
+    padding-left: 7px;
     color: white;
     border-left: 2px solid rgb(173, 255, 47);
 }
@@ -238,7 +241,10 @@ main {
     white-space: nowrap;
 }
 
-
+.underline {
+    padding-bottom: .3rem;
+    border-bottom: 2px solid rgb(173, 255, 47);
+}
 
 
 /* albums */
@@ -310,7 +316,7 @@ main {
 }
 
 .popular-container {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .rounded-img {
@@ -346,10 +352,15 @@ main {
 }
 
 .controls-container {
-    border: 2px solid red;
     width: 97%;
     margin: auto;
     color: white;
+    display: flex;
+}
+
+.ctrl-block {
+    flex-basis: 33%;
+    padding: .5em 0;
 }
 
 .ctrl-left-block {
@@ -377,13 +388,37 @@ main {
 }
 
 .ctrl-left-icons {
-    margin-left: 2.2rem;
+    margin-left: 2.4rem;
     display: flex;
-    gap: .8rem;
+    gap: .6rem;
+}
+
+.ctrl-center-block {
+    display: flex;
+    justify-content: center;
+}
+
+.center-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 50%;
+}
+
+.play {
+    font-size: 1.7em;
 }
 
 
+.ctrl-right-block {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.right-block-icons {
+    display: flex;
+    gap: .9rem;
+}
 
 
 
@@ -433,14 +468,16 @@ main {
 
     .home {
         padding-top: .6em;
+        padding-left: 9px;
+        border-left: 0;
     }
 
-    .top-block-logo-hover {
+    .top-block-logo-under {
         width: 25px;
         margin-top: 1em;
     }
     
-    .top-block-logo-hover img{
+    .top-block-logo-under img{
         width: 100%;
         display: inline-block;
     }
