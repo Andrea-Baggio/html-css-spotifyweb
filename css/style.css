@@ -336,7 +336,17 @@ main {
     background-color: rgb(32, 128, 66);
 }
 
+.top-bar-item:hover {
+    cursor: pointer;
+    color: white;
+}
 
+
+.album img:hover {
+    cursor: pointer;
+    color: lightgray;
+    opacity: .6;
+}
 
 /* controls */
 
@@ -413,6 +423,7 @@ main {
 .ctrl-right-block {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .right-block-icons {
@@ -421,6 +432,18 @@ main {
 }
 
 
+/* controls hover effect */
+
+.ctrl-left-icon:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.center-top i:hover,
+.right-block-icons i:hover {
+    cursor: pointer;
+    color: gray;
+}
 
 
 /* MEDIA QUERY */
@@ -511,9 +534,23 @@ main {
         flex-basis: calc((100% / 3) - .7rem);
         min-width: 130px;
     }
+
+
+    /* controls */
+
+    .ctrl-left-icons {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+        margin-left: 1.4rem;
+    }
 }
 
-
+@media screen and (max-width: 515px) {
+    .controls {
+        font-size: .7em;
+    }
+}
 
 @media screen and (max-width: 350px) {
     .spam-button {
